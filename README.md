@@ -3,6 +3,7 @@
 A hello-world web app to use with Kubernetes
 
 [![Docker Repository on Quay](https://quay.io/repository/swade1987/hello-world/status "Docker Repository on Quay")](https://quay.io/repository/swade1987/hello-world)
+[![Build Status](https://app.snap-ci.com/swade1987/hello-world-kubernetes/branch/master/build_image)](https://app.snap-ci.com/swade1987/hello-world-kubernetes/branch/master)
 
 # Usage
 
