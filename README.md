@@ -6,17 +6,7 @@ A hello-world web app to use with Kubernetes
 
 # Usage
 
-## 1. Build
-```
-$ make build
-```
-
-## 2. Run
-```
-$ make run
-```
-
-## 3. Restart
+To run the container execute `make run` and then browse to [http://localhost](http://localhost)
 
 If you have made changes to the source code and need the container updating execute the following command:
 
