@@ -1,7 +1,8 @@
-IMAGE = swade1987/hello-world
+IMAGE = quay.io/swade1987/hello-world
 SNAP_PIPELINE_COUNTER?="unknown"
 
 QUAY_USERNAME=swade1987
+QUAY_EMAIL=steven@stevenwade.co.uk
 QUAY_PASSWORD?="unknown"
 
 # Construct the image tag.
@@ -18,7 +19,7 @@ build:
 	docker build -t $(IMAGE):$(VERSION) .
 
 login:
-	docker login -u $(QUAY_USERNAME) -p $(QUAY_PASSWORD) quay.io
+	docker login -e $(QUAY_EMAIL) -u $(QUAY_USERNAME) -p $(QUAY_PASSWORD) quay.io
 
 push:
 	docker push $(IMAGE):$(VERSION)
