@@ -18,7 +18,7 @@ build:
 	docker build -t $(IMAGE):$(VERSION) .
 
 login:
-	docker login quay.io -u $(QUAY_USERNAME) -p $(QUAY_PASSWORD)
+	docker login -u $(QUAY_USERNAME) -p $(QUAY_PASSWORD) quay.io
 
 push:
 	docker push $(IMAGE):$(VERSION)
