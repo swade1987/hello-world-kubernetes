@@ -80,7 +80,7 @@ else {
 </head>
 <body><div id="content">
     <h1><?php echo hello_world(); ?></h1>
-    <table style="width:100%">
+    <table style="width:200%">
 <?php
     foreach(table_contents() as $row) {
         echo "      <tr><td>".$row[0]."</td><td>".$row[1]."</td></tr>\n";
