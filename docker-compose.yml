@@ -1,7 +1,7 @@
 helloworld:
   build: .
   ports:
-    - "80:80"
+    - "80:8080"
   environment:
     - MY_POD_NAME=hello-world-caffe
     - MY_POD_NAMESPACE=mynamespace
