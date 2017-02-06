@@ -55,6 +55,7 @@ if (isset($_SERVER['HTTP_USER_AGENT']) && preg_match("/(curl|wget)/i", $_SERVER[
 else {
 ?><html>
 <head>
+<meta http-equiv="Cache-Control" content="no-store" />
 <title><?php echo hello_world(); ?></title>
     <link href="//fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
     <style>
