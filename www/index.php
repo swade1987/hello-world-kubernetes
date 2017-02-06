@@ -22,21 +22,21 @@ function table_contents(){
         ];
     }
 
-    // services
-    foreach($_ENV as $key => $value) {
-        if(preg_match("/^(.*)_PORT_([0-9]*)_(TCP|UDP)$/", $key, $matches)) {
-            $service = [
-                "name" => $matches[1],
-                "port" => $matches[2],
-                "proto" => $matches[3],
-                "value" => $value
-            ];
-            $rows[] =[
-                "Service ".$service["name"].":".$service["port"],
-                $service["value"],
-            ];
-        }
-    }
+    // // services
+    // foreach($_ENV as $key => $value) {
+    //     if(preg_match("/^(.*)_PORT_([0-9]*)_(TCP|UDP)$/", $key, $matches)) {
+    //         $service = [
+    //             "name" => $matches[1],
+    //             "port" => $matches[2],
+    //             "proto" => $matches[3],
+    //             "value" => $value
+    //         ];
+    //         $rows[] =[
+    //             "Service ".$service["name"].":".$service["port"],
+    //             $service["value"],
+    //         ];
+    //     }
+    // }
     return $rows;
 }
 
